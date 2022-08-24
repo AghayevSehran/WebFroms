@@ -86,14 +86,9 @@ namespace Test
 
         }
 
-        private void Val_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            phoneValidator.ErrorMessage = "Duplicated number.";
-            args.IsValid = false;
-        }
-
         protected void phoneValidator_ServerValidate(object source, ServerValidateEventArgs args)
         {
+            Label1.Visible = false;
             if (txtPhone.Text == string.Empty)
             {
                 phoneValidator.ErrorMessage = "Please enter valide phone number.";
