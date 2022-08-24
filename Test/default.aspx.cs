@@ -14,7 +14,7 @@ namespace Test
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack) Label1.Visible = false;
+           
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
